@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotActivity"
+
+    >
+    <RelativeLayout
+        android:id="@+id/headerHot"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/background"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_returnHot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:src="@drawable/icon_return"
+            app:backgroundTint="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="36dp"
+            app:tint="@color/white" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerHot"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#616161"
+
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardCornerRadius="30dp"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_top"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/receipt_bg"
+
+                >
+
+                <ImageView
+                    android:id="@+id/logo_receipt"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/newlogo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:fontFamily="@font/concert_one"
+                    android:gravity="center"
+                    android:text="Check-in Successful!"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/logo_receipt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_bot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="150dp"
+                >
+
+                <TextView
+                    android:id="@+id/inform_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/concert_one"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Information"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/inform_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_title"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="16sp"
+                    android:text="Location"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_location_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_location"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="20sp"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingBottom="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_location_value"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="16sp"
+                    android:text="Name"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_name_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_name"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="20sp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingBottom="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_name_value"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="16sp"
+                    android:text="Email"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_email_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_email"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="20sp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingBottom="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_email_value"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="16sp"
+                    android:text="Date"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_date_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_date"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="20sp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingBottom="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_date_value"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="16sp"
+                    android:text="Time"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/inform_time_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/inform_time"
+                    android:fontFamily="@font/concert_one"
+                    android:textSize="20sp"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingBottom="10dp"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

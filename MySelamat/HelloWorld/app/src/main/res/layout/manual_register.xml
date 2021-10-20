@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManualRegisterActivity"
+
+    >
+    <RelativeLayout
+        android:id="@+id/headerMregis"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/background"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_return_Mregis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:src="@drawable/icon_return"
+            app:backgroundTint="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="36dp"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerMregis"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/Mregis_tv_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:fontFamily="@font/concert_one"
+            android:textSize="23sp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"
+            />
+
+        <EditText
+            android:id="@+id/Mregis_et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:layout_below="@+id/Mregis_tv_Name"
+            android:text=""
+            android:editable="false"
+            android:textSize="23sp"
+            android:fontFamily="@font/concert_one"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_marginBottom="13dp"
+            />
+
+        <TextView
+            android:id="@+id/Mregis_tv_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_below="@+id/Mregis_et_Name"
+            android:fontFamily="@font/concert_one"
+            android:textSize="23sp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"
+            />
+
+        <EditText
+            android:id="@+id/Mregis_et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:layout_below="@+id/Mregis_tv_Email"
+            android:text=""
+            android:editable="false"
+            android:fontFamily="@font/concert_one"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textSize="23sp"
+            android:layout_marginBottom="13dp"
+            />
+
+        <TextView
+            android:id="@+id/Mregis_tv_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_below="@+id/Mregis_et_Email"
+            android:fontFamily="@font/concert_one"
+            android:textSize="23sp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"
+            />
+
+        <EditText
+            android:id="@+id/Mregis_et_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:layout_below="@+id/Mregis_tv_Location"
+            android:text=""
+            android:fontFamily="@font/concert_one"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="23sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Mregis_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mregis_et_Location"
+            android:text="Submit"
+            android:fontFamily="@font/concert_one"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/logout_btn"
+            />
+
+        <TextView
+            android:id="@+id/Mregis_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mregis_btn"
+            android:textSize="25sp"
+            android:text=""
+            android:textAlignment="center"
+            android:fontFamily="@font/concert_one"
+            android:textColor="#ff3b41"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

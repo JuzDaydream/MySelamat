@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraScanActivity">
+    
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scannerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFocusButtonVisible="true"
+        app:autoFocusButtonColor="@color/white"
+        app:flashButtonColor="@color/white"
+        app:flashButtonVisible="true"
+        app:maskColor="#6C000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:paddingBottom="10dp"
+        android:text="Place a QR Code inside the scan area"
+        android:textAlignment="center"
+        android:fontFamily="@font/concert_one"
+        />
+
+    <TextView
+        android:id="@+id/errorreminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/concert_one"
+        android:paddingTop="100dp"
+        android:text=""
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textColor="#ff3b41"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Mregis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="110dp"
+        android:text="Manual Check-In"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/concert_one"
+        android:background="@drawable/card_bg"
+        />
+
+</RelativeLayout>
