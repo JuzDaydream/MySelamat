@@ -14,7 +14,7 @@
         android:fontFamily="@font/concert_one"
         android:gravity="center"
         android:paddingVertical="50dp"
-        android:text="You've been to infected area,\n Pleaes quarantine at home for 14 days"
+        android:text="You've been to infected area,\n Please quarantine at home for 14 days"
         android:textColor="@color/white"
         android:textSize="23sp"
         android:layout_marginHorizontal="25dp"
